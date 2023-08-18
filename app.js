@@ -65,9 +65,9 @@ const path=require('path');
 
 app.use(express.static(path.join(__dirname,'docs')))
 
-app.get('*',async(req,res)=>{
+app.get('*', async(req,res)=>{
     res.sendFile(path.join(__dirname,'docs','index.html'))
-})
+});
 
 
 
